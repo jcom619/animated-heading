@@ -1,0 +1,112 @@
+.main-header {
+  align-items: center;
+  background: $wht-alpha-2;
+  color: $color-black;
+  font-size: 20px;
+  display: flex;
+  height: 65px;
+  justify-content: space-between;
+  padding: 0 10vw;
+  position: fixed;
+  width: 100vw;
+  z-index: 1;
+  border-bottom: 3px solid $dark-red-alpha-6;
+  box-shadow: 0 0 75px $color-black, 0 0 150px $color-black, 0 0 200px $color-black;
+  transition: .4s ease-out;
+
+  a {
+    color: inherit;
+    text-decoration: none;
+    // text-transform: uppercase;
+  }
+
+  .nav-links {
+    display: flex;
+    list-style: none;
+    
+
+    .nav-link {
+      font-size: 20px;
+      text-shadow: 0 -1px 2px $wht-alpha-4, 0 0 3px $dark-red, 0 0 3px $color-black;
+      transition: .4s ease-out;
+
+      a {
+        margin: .2rem;
+        padding: 1rem .5rem;
+      }
+
+      :hover {
+        color: $dark-red-alpha-8;
+        text-shadow: 0 1px 2px $color-black, 0 0 3px $color-white;
+      }
+    }
+  }
+
+  // HAMBORGER MENU
+  .menu-icon {
+    cursor: pointer;
+    display: none;
+    padding: 26px 10px;
+    position: relative;
+    z-index: 1;
+
+    .menu-icon-line {
+      background: $wht-alpha-8;
+      border-radius: 4px;
+      box-shadow: 2px 2px 2px $color-black, 0 0 4px $dark-red, 0 0 6px $color-white;
+      display: block;
+      height: 4px;
+      position: relative;
+      width: 30px;
+
+      &::before,
+      &::after {
+        background: $wht-alpha-8;
+        border-radius: 4px;
+        box-shadow: 2px 2px 2px $color-black, 0 0 3px $dark-red, 0 0 10px $color-white;
+        content: '';
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        position: absolute;
+        width: 100%;
+
+      }
+
+      &::before {
+        transform: translateY(-8px);
+      }
+
+      &::after {
+        transform: translateY(8px);
+      }
+    }
+  }
+
+  .menu-btn {
+    display: none;
+  }
+
+  &.scrolled {
+    background: $color-black;
+    color: $black-alpha-8;
+    font-size: 18px;
+    height: 45px;
+    border-bottom: 3px solid $wht-alpha-6;
+    text-shadow: 0 -1px 2px $black-alpha-4, 0 0 3px $dark-red, 0 0 3px $color-white;
+
+    .menu-icon-line {
+      background: $color-black;
+
+      &::before,
+      &::after {
+        background: $color-black;
+        box-shadow: 1px 1px 1px $color-white, 0 0 3px $dark-red, 0 0 10px $color-black;
+
+        .nav-link {
+          text-shadow: 0 -1px 2px $black-alpha-4, 0 0 3px $dark-red, 0 0 3px $color-black;
+        }
+      }
+    }
+  }
+}

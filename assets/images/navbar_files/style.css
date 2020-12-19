@@ -1,0 +1,146 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat&display=swap");
+/* line 1, ../../../../../../../../../../../../../Users/joshuacompton/Documents/navbar/scss/_hero.scss */
+.hero {
+  height: 100vh;
+  background: url("../images/background-image.png") no-repeat bottom center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+}
+
+/* line 9, ../../../../../../../../../../../../../Users/joshuacompton/Documents/navbar/scss/_hero.scss */
+.hero .filter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(40, 40, 40, 0.1);
+  width: 200vw;
+  height: 100%;
+  overflow: hidden;
+  border-top: 1px solid rgba(125, 5, 25, 0.2);
+  border-bottom: 1px solid rgba(125, 5, 25, 0.2);
+  box-shadow: inset 0px 0px 5px black, inset 0px 0px 6px black, inset 0px 0px 7px black, inset 0px 0px 8px black, inset 0px 0px 9px black, inset 0px 0px 10px black, inset 0px 0px 20px #050505, inset 0px 0px 30px #050505, inset 0px 0px 40px #190505;
+}
+
+/* line 28, ../../../../../../../../../../../../../Users/joshuacompton/Documents/navbar/scss/_hero.scss */
+.hero .filter .title {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  color: rgba(5, 0, 0, 0.1);
+  text-shadow: 2px -2px 1px rgba(0, 0, 0, 0.78), 4px 2px 1px rgba(0, 30, 130, 0.2), 3px 3px 3px rgba(60, 50, 60, 0.4), 5px 5px 17px rgba(30, 0, 0, 0.8);
+  font-size: 15em;
+  width: 90%;
+}
+
+/* line 1, ../../../../../../../../../../../../../Users/joshuacompton/Documents/navbar/scss/_header.scss */
+.main-header {
+  background: rgba(200, 200, 200, 0.5);
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 65px;
+  width: 100vw;
+  padding: 0 10vw;
+  color: black;
+  z-index: 1;
+}
+
+/* line 12, ../../../../../../../../../../../../../Users/joshuacompton/Documents/navbar/scss/_header.scss */
+.main-header a {
+  text-decoration: none;
+  color: inherit;
+  text-transform: uppercase;
+}
+
+/* line 17, ../../../../../../../../../../../../../Users/joshuacompton/Documents/navbar/scss/_header.scss */
+.main-header .nav-links {
+  display: flex;
+  list-style: none;
+}
+
+/* line 20, ../../../../../../../../../../../../../Users/joshuacompton/Documents/navbar/scss/_header.scss */
+.main-header .nav-links .nav-link {
+  text-shadow: 1px 1px 3px white;
+}
+
+/* line 22, ../../../../../../../../../../../../../Users/joshuacompton/Documents/navbar/scss/_header.scss */
+.main-header .nav-links .nav-link a {
+  margin: .2rem;
+  padding: 1rem .5rem;
+}
+
+/* line 26, ../../../../../../../../../../../../../Users/joshuacompton/Documents/navbar/scss/_header.scss */
+.main-header .nav-links .nav-link a:hover {
+  color: rgba(155, 175, 205, 0.4);
+  text-shadow: 1px 1px 5px black;
+}
+
+/* line 32, ../../../../../../../../../../../../../Users/joshuacompton/Documents/navbar/scss/_header.scss */
+.main-header .menu-icon {
+  position: relative;
+  padding: 26px 10px;
+  cursor: pointer;
+  z-index: 1;
+  display: none;
+}
+
+/* line 38, ../../../../../../../../../../../../../Users/joshuacompton/Documents/navbar/scss/_header.scss */
+.main-header .menu-icon__line {
+  display: block;
+  position: relative;
+  background: #c8c8c8;
+  height: 20px;
+  width: 20px;
+  border-radius: 4px;
+}
+
+/* line 45, ../../../../../../../../../../../../../Users/joshuacompton/Documents/navbar/scss/_header.scss */
+.main-header .menu-icon__line::before, .main-header .menu-icon__line::after {
+  content: '';
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  border-radius: 4px;
+  background: black;
+}
+
+/* line 53, ../../../../../../../../../../../../../Users/joshuacompton/Documents/navbar/scss/_header.scss */
+.main-header .menu-icon__line::before {
+  transform: translateY(-5px);
+}
+
+/* line 56, ../../../../../../../../../../../../../Users/joshuacompton/Documents/navbar/scss/_header.scss */
+.main-header .menu-icon__line::after {
+  tarnsform: translateY(5px);
+}
+
+/* line 6, ../../../../../../../../../../../../../Users/joshuacompton/Documents/navbar/scss/style.scss */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* line 12, ../../../../../../../../../../../../../Users/joshuacompton/Documents/navbar/scss/style.scss */
+body {
+  font-family: Montserrat, sans-serif;
+  background: black;
+  color: rgba(255, 255, 255, 0.4);
+}
+
+/* line 18, ../../../../../../../../../../../../../Users/joshuacompton/Documents/navbar/scss/style.scss */
+.container {
+  width: 80%;
+  margin: 2rem auto;
+}
+
+/* line 21, ../../../../../../../../../../../../../Users/joshuacompton/Documents/navbar/scss/style.scss */
+.container p {
+  margin: 1rem 0;
+}
+
+/*# sourceMappingURL=style.css.map */
